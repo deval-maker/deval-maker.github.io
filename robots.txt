@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: deval-maker.github.io/sitemap.xml
