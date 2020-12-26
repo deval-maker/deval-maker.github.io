@@ -27,7 +27,7 @@
   
   
 
-  <meta name="author" content="Nelson Bighetti">
+  <meta name="author" content="Deval Shah">
 
   
   
@@ -245,6 +245,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PT7JW9WNN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-2PT7JW9WNN', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -256,8 +294,8 @@
   
 
   <link rel="manifest" href="/deval-maker.github.io/index.webmanifest">
-  <link rel="icon" type="image/png" href="/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="deval-maker.github.io/project/internal-project/">
 
@@ -317,7 +355,7 @@
   
   "author": {
     "@type": "Person",
-    "name": "Nelson Bighetti"
+    "name": "Deval Shah"
   },
   
   "publisher": {
@@ -325,7 +363,7 @@
     "name": "Deval Shah",
     "logo": {
       "@type": "ImageObject",
-      "url": "/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
+      "url": "/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "An example of using the in-built project page."
@@ -467,7 +505,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/deval-maker.github.io/#hero"><span>Demo</span></a>
+          <a class="nav-link " href="/deval-maker.github.io/#about"><span>About</span></a>
         </li>
 
         
@@ -1021,12 +1059,12 @@
   <div class="media author-card content-widget-hr">
     
       
-      <a href="deval-maker.github.io"><img class="avatar mr-3 avatar-circle" src="/deval-maker.github.io/author/nelson-bighetti/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Nelson Bighetti"></a>
+      <a href="deval-maker.github.io"><img class="avatar mr-3 avatar-circle" src="/deval-maker.github.io/author/deval-shah/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Deval Shah"></a>
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="deval-maker.github.io">Nelson Bighetti</a></h5>
-      <h6 class="card-subtitle">Professor of Artificial Intelligence</h6>
+      <h5 class="card-title"><a href="deval-maker.github.io">Deval Shah</a></h5>
+      <h6 class="card-subtitle">Graduate student</h6>
       <p class="card-text">My research interests include distributed robotics, mobile computing and programmable matter.</p>
       <ul class="network-icon" aria-hidden="true">
   
@@ -1199,7 +1237,7 @@
         
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span>
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span>
       </div>
       
     </div>
@@ -1370,7 +1408,7 @@
         
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span >
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span>, <span >
       <a href="deval-maker.github.io/author/robert-ford/">Robert Ford</a></span>
       </div>
       

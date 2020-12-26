@@ -27,14 +27,14 @@
   
   
 
-  <meta name="author" content="Nelson Bighetti">
+  <meta name="author" content="Deval Shah">
 
   
   
   
     
   
-  <meta name="description" content="Professor of Artificial Intelligence">
+  <meta name="description" content="Graduate student">
 
   
   <link rel="alternate" hreflang="en-us" href="deval-maker.github.io/">
@@ -245,6 +245,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PT7JW9WNN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-2PT7JW9WNN', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -260,8 +298,8 @@
   
 
   <link rel="manifest" href="/deval-maker.github.io/index.webmanifest">
-  <link rel="icon" type="image/png" href="/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="deval-maker.github.io/">
 
@@ -281,8 +319,8 @@
   <meta property="og:site_name" content="Deval Shah">
   <meta property="og:url" content="deval-maker.github.io/">
   <meta property="og:title" content="Deval Shah">
-  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/deval-maker.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Graduate student"><meta property="og:image" content="/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/deval-maker.github.io/images/icon_huf6405452ecdf9a3ed7bcc3909ec454c4_8517_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
   
@@ -436,7 +474,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/deval-maker.github.io/#hero"><span>Demo</span></a>
+          <a class="nav-link " href="/deval-maker.github.io/#about"><span>About</span></a>
         </li>
 
         
@@ -806,17 +844,17 @@
 
       
       
-      <img class="avatar avatar-circle" src="/deval-maker.github.io/author/nelson-bighetti/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Nelson Bighetti">
+      <img class="avatar avatar-circle" src="/deval-maker.github.io/author/deval-shah/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Deval Shah">
       
 
       <div class="portrait-title">
-        <h2>Nelson Bighetti</h2>
-        <h3>Professor of Artificial Intelligence</h3>
+        <h2>Deval Shah</h2>
+        <h3>Graduate student</h3>
 
         
         <h3>
-          <a href="https://www.stanford.edu/" target="_blank" rel="noopener">
-          <span>Stanford University</span>
+          <a href="https://www.cmu.edu/" target="_blank" rel="noopener">
+          <span>Carnegie Mellon University</span>
           </a>
         </h3>
         
@@ -922,7 +960,7 @@
       <p>Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.</p>
 <p>
-  <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/deval-maker.github.io/media/demo_resume.pdf" target="_blank">resumé</a>.</p>
+  <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/deval-maker.github.io/media/deval_resume.pdf" target="_blank">resumé</a>.</p>
 
     </div>
 
@@ -1648,7 +1686,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span>
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span>
   </div>
   
   
@@ -1756,7 +1794,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span >
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span>, <span >
       <a href="deval-maker.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/">吳恩達</a></span>
   </div>
   
@@ -2751,7 +2789,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span >
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span>, <span >
       <a href="deval-maker.github.io/author/robert-ford/">Robert Ford</a></span>
   </div>
   
@@ -3071,7 +3109,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span>
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span>
   </span>
   (2019).
   <a href="deval-maker.github.io/publication/preprint/">An example preprint / working paper</a>.
@@ -3195,7 +3233,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   <span >
-      <a href="deval-maker.github.io/author/nelson-bighetti/">Nelson Bighetti</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      <a href="deval-maker.github.io/author/deval-shah/">Deval Shah</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
       <a href="deval-maker.github.io/author/robert-ford/">Robert Ford</a></span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>
   </span>
   (2015).
